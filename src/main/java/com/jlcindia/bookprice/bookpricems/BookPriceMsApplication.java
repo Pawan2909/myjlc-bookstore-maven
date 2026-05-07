@@ -13,6 +13,7 @@ public class BookPriceMsApplication {
         System.out.println("Updated-4 by Pawan");
         System.out.println("Updated-5 by Pawan");
         System.out.println("Updated-6 by Pawan");
+        System.out.println("Updated-7 by Pawan");
         SpringApplication.run(BookPriceMsApplication.class, args);
     }
 
