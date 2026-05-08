@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    stages {
+  
+   stage('my-code-checkout') { 
+     steps {
+    //Task Here
+git branch:'jlcmaster',
+url: 'https://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@github.com/SrinivasDande/myjlc-bookstore-maven.git'
+
+     echo "Checkout Completed Successfully..."
+     }
+    }
+
+    stage('my-code-compile') { 
+     steps {
+    //Task Here
+     sh 'mvn compile'	
+      echo "Compilation Completed Successfully..."
+     }
+    }
+
+  stage('my-unit-testing') { 
+  steps {
+     //Task Here
+    sh 'mvn test'	
+     echo "Unit Testing Completed Successfully..."
+     }
+    }
+
+  stage('my-code-packaging') { 
+  steps {
+     //Task Here
+  sh 'mvn package'	
+ echo "Packaing Completed Successfully..."
+     }
+    }
+
+ 
+    }
+}
