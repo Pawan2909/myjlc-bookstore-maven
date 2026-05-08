@@ -6,7 +6,7 @@ pipeline {
      steps {
     //Task Here
 git branch:'jlcmaster',
-url: 'https://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@github.com/SrinivasDande/myjlc-bookstore-maven.git'
+url: 'https://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@github.com/Pawan2909/myjlc-bookstore-maven.git'
 
      echo "Checkout Completed Successfully..."
      }
